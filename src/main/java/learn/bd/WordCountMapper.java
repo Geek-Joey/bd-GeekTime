@@ -21,13 +21,10 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 
         // 1 获取一行
         String line = value.toString();
-
         // 2 切割
         String[] words = line.split("\t");
-
         // 3 输出
         for (String word : words) {
-
             k.set(word);
             context.write(k, v);
         }
