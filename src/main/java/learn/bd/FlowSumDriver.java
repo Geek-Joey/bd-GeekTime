@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
  * @author Joey
  * @create 2021-07-18 22:36
  */
-public class FlowsumDriver {
+public class FlowSumDriver {
     public static void main(String[] args) throws Exception {
 
         // 1.创建job对象，传入参数配置
@@ -20,7 +20,7 @@ public class FlowsumDriver {
         Job job = Job.getInstance(configuration);
 
         // 2.指定driver
-        job.setJarByClass(FlowsumDriver.class);
+        job.setJarByClass(FlowSumDriver.class);
 
         // 3.指定mapper和reducer
         job.setMapperClass(FlowCountMapper.class);
