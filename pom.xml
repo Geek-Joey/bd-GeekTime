@@ -40,5 +40,11 @@
             <artifactId>hadoop-hdfs</artifactId>
             <version>2.7.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>2.1.0</version>
+        </dependency>
     </dependencies>
 </project>
